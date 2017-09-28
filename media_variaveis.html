@@ -1,0 +1,27 @@
+<meta charset ="UTF-8">
+<script>
+
+	var ano = 2017;
+	
+		document.write("Flávio tem " + (ano - 1980) + " anos" +"<br>");
+		document.write("Joaquim tem " + (ano - 2000) + " anos");
+		document.write("<br>"); //Podendo ser escrito em contatenado na linha 6 ou como linha 8 porem mais verbalizado nessa.
+	
+	ano = 2015 // Reatribuição para uma nova entrada de valor para variavel, não é ncessário declarar var novamente.
+
+		document.write("Carlos tem " + (ano - 1986) + " anos");
+
+	var resultFlavio = (ano - 1980);
+	var resultJoaqui = (ano - 2000);
+	var resultCarlos = (ano - 1986);
+
+	var idadeFlavio = resultFlavio;//Criei uma variável dentro de outra para idade dos declarados para não haver necessidade de verificar sempre o resultado da subritação do ano, ficando apenas a alteração do ano, coisa que ainda não aprendi me 23/08/2017.
+	var idadeJoaquim = resultJoaqui;
+	var idadeCarlos = resultCarlos;
+
+	var media = (idadeFlavio + idadeJoaquim + idadeCarlos)/3;
+
+		document.write("<br>");
+		document.write("A média de idade deles é " + Math.round(media) + " anos");
+
+</script>

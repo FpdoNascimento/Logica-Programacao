@@ -1,0 +1,28 @@
+<h3>Álcool ou Gasolina?</h3>
+
+<meta charset="UTF-8">
+
+<script>
+	// AS funções sempre no inicio antes de tudo
+	// Sempre usa-se verbo/Ação
+	// É possível uma função chamar outra função
+	function pulaLinha(){ //Função sem receber parametro
+
+			document.write("<br>");
+	}
+	function mostra(escreve){ //Função recebendo parametro
+
+			document.write(escreve);
+			pulaLinha();
+	}
+
+	var tanque = 40;
+	var caminhoComGasolina = 480;
+	var consumoGasolina = (caminhoComGasolina/tanque);
+	var caminhoComAlcool = 300;
+	var consumoAlcool = (caminhoComAlcool/tanque);
+
+		mostra("O consumo de Gasolina com meu é " + consumoGasolina + " por litro");
+		mostra("O consumo de Alcool com meu é " + consumoAlcool + " por litro");
+
+</script>

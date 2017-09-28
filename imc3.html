@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+	var imc = peso / (altura * altura);
+	return imc;							//Utilizando return para devolver
+										//o valor correto do calculo da
+										//formula imc
+										// pode-se usar return = peso / (altura * altura); no lugar de var.....
+}
+
+var pesoAmigo = 158;
+var alturaAmigo = 1.72;
+var imcAmigo = calculaImc(alturaAmigo, pesoAmigo);
+mostra("O imc do meu amigo é " + Math.round(imcAmigo));
+
+if(imcAmigo < 18.5) {
+    mostra("Seu IMC indica que você está ABAIXO do peso.");
+}
+
+if (imcAmigo >=18.6 && imcAmigo <= 24,9){
+
+	mostra(" O seu imc está ideal");
+}
+
+if (imcAmigo >=40){
+
+	mostra(" O seu imc acima Obesidade Grau III, Morbida");
+}
+</script>

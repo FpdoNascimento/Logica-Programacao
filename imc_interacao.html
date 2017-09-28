@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso/ (altura * altura);
+    }
+
+    var nome = prompt("Qual o seu nome?: ");
+    var alturaInformada = prompt("Informe sua altura (separado por .)");
+    var pesoInformado = prompt("informe seu peso em kg");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    mostra("Ola " + nome + ", o seu IMC calculado é " + imc);
+
+   if(imc < 18.5) {
+    mostra("Seu IMC indica que você está ABAIXO do peso.");
+}
+else (imc >= 18.5 && imc <= 24,9) 
+    mostra("OK! Seu IMC está entre os dois limites.");
+ else (imc >= 25 && imc <= 29,9) 
+    mostra("OK! Seu IMC obeso.");
+ else (imc >= 30 && imc <= 34,9) 
+    mostra("OK! Seu IMC obesoII.");
+ else (imc >= 35 && imc <= 39,9) 
+    mostra("OK! Seu IMC obesoIII.");}
+}
+</script>

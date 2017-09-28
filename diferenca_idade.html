@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        
+    }
+
+    var anoNasEu = 1979;
+    var diaNasEu = 22;
+    var mesNasEu = 01;
+    var anoNasEla = 1995;
+    var diaNasEla = 29;
+    var mesNasEla = 05;
+    var subtracaoAno = anoNasEu - anoNasEla;
+    var subtracaoDia = diaNasEu - diaNasEla;
+    var subtracaoMes = mesNasEu - mesNasEla;
+    
+        document.write("Eu nasci em 1979");
+        pulaLinha();
+        document.write("Minha Irmã nasceu em 1995");
+        pulaLinha();
+        document.write(" A diferença em idade é: ");
+        pulaLinha();
+
+    mostra("Nossa diferença é: " + subtracaoAno + " anos " + subtracaoMes + " meses " + subtracaoDia + " dias");
+
+</script>
